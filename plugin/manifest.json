@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Don't Be Biased",
+  "description": "A simple chrome plugin that will convert news websites in the Philippines to plain text.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://rappler.com/*",
+    "*://www.rappler.com/*",
+    "*://*.rappler.com/*",
+    "*://gmanetwork.com/*",
+    "*://www.gmanetwork.com/*",
+    "*://*.gmanetwork.com/*",
+    "*://abs-cbn.com/*",
+    "*://www.abs-cbn.com/*",
+    "*://*.abs-cbn.com/*",
+    "*://inquirer.net/*",
+    "*://www.inquirer.net/*",
+    "*://*.inquirer.net/*"
+  ]
+}
